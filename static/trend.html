@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="trend.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+
+<ul class='custom-menu main'>
+    <li data-action = "delete">DELETE</li>
+    <li data-action = "group">GROUP</li>
+    <li data-action = "move">MOVE</li>
+</ul>
+
+<ul class='custom-menu move' id="movemenu">
+    <!--<li data-action = "subplot0">subplot0</li>-->
+</ul>
+
+<table id="header">
+    <tr>
+        <td id="website">
+            <div id="header_left">
+                <div title="Arnab Nandi Research Group">
+                    <a href="http://www.interact.osu.edu" target="_blank">interact.osu.edu</a>
+                </div>
+                <div id="dataset"
+                     title="Keywords from Titles of All NSF Grants from 1970 to 2014">
+                    Dataset: NSF Awards Titles
+                </div>
+                <div id="help" class="blink" title="DELETE: Right Click
+GROUP: Click on a trend. Then click on another in the same subplot
+SPLIT: Middle Click
+MOVE: Click on a trend. Then another subplot
+These actions can also be run by drawing a box around lines under consideration">How To Interact?
+                </div>
+            </div>
+        </td>
+        <td id="trendquery_outer">
+            <div id="tq" >TrendQuery</div>
+            <div id="analyze"
+                 title="TrendQuery is a system designed for interactive analysis of trends represented using temporal and semantic features. We present below the results of initial clustering of the dataset. Use the actions given in 'How To Interact' to interact with the charts. You can also enter the query yourself or use one of the query recommendations given below."
+                    >Analyze This!</div>
+        </td>
+        <td>
+            <span id="names" title="Authors"
+                    >Niranjan Kamat <br>
+                  Eugene Wu <br>
+                  Arnab Nandi
+            </span>
+        </td>
+    </tr>
+</table>
+
+<div id="charts">
+    <!--<span id="area0" class="chart"></span>-->
+</div>
+
+<table>
+    <tr>
+        <td width = 8%>
+            <button type="button" id = "add_subplot"
+                    class="commands"
+                    onclick="add_empty_chart()"
+                    title="Add Subplot"
+                    >
+                <div>Add Empty Chart</div>
+            </button>
+
+            <button type="button" id = "recluster_reset"
+                    class="commands"
+                    onclick="recluster_and_redraw()"
+                    title="Clicking this will perform metric learning using your actions so far, recluster, and present new clusters"
+                    >
+                <div>Recluster & Reset</div>
+            </button>
+        </td>
+        <td width = 33%>
+            <div id="sketch_outer"
+                 title="Draw a trend and 10 most similar trends from all the charts will be presented to the right and be highlighted in the charts">
+                <div class="table_sketch">
+                    <div class="row_sketch">
+                        <div class="text_sketch">Draw Trend to Search</div>
+                    </div>
+                    <div>
+                        <div id="svg_sketch"></div>
+                    </div>
+                </div>
+
+                <div class="table_sketch">
+                    <div>
+                        <div class="text_sketch">Matching Trends</div>
+                    </div>
+                    <ol class="matches_header" id="matches1">
+                    </ol>
+                </div>
+            </div>
+        </td>
+        <td width = 32%>
+            <div id="query_input">
+                <div class = "User_Query">
+                    <button type="button" class="Run" onclick="run_query_button_click()">
+                        <img src="play.png" class="selection"
+                             title="Click me to run the query">
+                    </button>
+                    <input type="text" id="TEXTBOX_ID"
+                           placeholder="Enter Query"
+                           title="Enter Query Manually"><br>
+                </div>
+                <div id = "Recommendations"
+                     title="Ranked List of Query Suggestions">
+                    <div class = "div_header">
+                        <h3>Query Recommendations</h3>
+                    </div>
+                    <div id = "actual_recs">
+                        <!--<div class="rec" id="rec0"></div>-->
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td width = 27%>
+            <div id = "query_log_outer">
+                <div class = "div_header" title="History of queries run so far">
+                    <h3>Query Log</h3>
+                </div>
+                <div id = "entries">
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.legend.js"></script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" property="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="global_consts.js"></script>
+<script type="text/javascript" src="global_vars.js"></script>
+
+<script type="text/javascript" src="getters.js"></script>
+
+<script type="text/javascript" src="querylog.js"></script>
+
+<script type="text/javascript" src="drawCharts.js"></script>
+
+<script type="text/javascript" src="recommendation.js"></script>
+
+<script type="text/javascript" src="runquery.js"></script>
+
+<script type="text/javascript" src="individual_recs.js"></script>
+
+<script type="text/javascript" src="metrics.js"></script>
+
+<script type="text/javascript" src="actions.js"></script>
+
+<script type="text/javascript" src="sketch.js"></script>
+
+<script type="text/javascript" src="menu.js"></script>
+
+<script type="text/javascript" src="box.js"></script>
+
+<script type="text/javascript" src="recluster.js"></script>
+
+<script type="text/javascript" src="start.js"></script>
+
+</body>

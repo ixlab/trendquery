@@ -1,0 +1,19 @@
+.chart-line {
+        fill: none;
+        stroke: black;
+        stroke-width: 1px;
+      }
+    
+      .axis text {
+        font-family: 'Poiret One', cursive;
+        font-size: 12pt;
+      }
+      .axis .label {
+        font-size: 22pt;
+      }
+
+      .axis path, .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }

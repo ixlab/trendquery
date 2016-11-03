@@ -1,0 +1,6 @@
+GROUP FROM SUBPLOT subplot1 TREND deform TREND polit
+GROUP FROM SUBPLOT subplot1 TREND deform_polit TREND fundament
+GROUP FROM SUBPLOT subplot1 TREND deform_polit_fundament TREND sens
+DELETE FROM SUBPLOT subplot1 TREND machin
+DELETE FROM SUBPLOT subplot1 TREND basi
+DELETE FROM SUBPLOT subplot1 TREND creat
