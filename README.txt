@@ -12,6 +12,8 @@ http://dl.acm.org/citation.cfm?id=2939514
  publisher = {ACM},
 }
 
+Video: https://www.youtube.com/watch?v=DfBEomuxNtw
+
 Requirements:
 1. flask
 2. textblob
