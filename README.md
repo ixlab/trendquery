@@ -1,16 +1,16 @@
-#TrendQuery: A System for Interactive Exploration of Trends
+# TrendQuery: A System for Interactive Exploration of Trends
 
 http://dl.acm.org/citation.cfm?id=2939514
 
-@inproceedings{trendquery,
- author = {Kamat, Niranjan and Wu, Eugene and Nandi, Arnab},
- title = {TrendQuery: A System for Interactive Exploration of Trends},
- booktitle = {Proceedings of the Workshop on Human-In-the-Loop Data Analytics},
- year = {2016},
- pages = {12:1--12:4},
- doi = {10.1145/2939502.2939514},
- publisher = {ACM},
-}
+    @inproceedings{trendquery,
+      author = {Kamat, Niranjan and Wu, Eugene and Nandi, Arnab},
+      title = {TrendQuery: A System for Interactive Exploration of Trends},
+      booktitle = {Proceedings of the Workshop on Human-In-the-Loop Data Analytics},
+      year = {2016},
+      pages = {12:1--12:4},
+      doi = {10.1145/2939502.2939514},
+      publisher = {ACM},
+    }
 
 Video: https://www.youtube.com/watch?v=DfBEomuxNtw
 
