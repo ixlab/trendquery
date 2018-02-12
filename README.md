@@ -14,6 +14,8 @@ http://dl.acm.org/citation.cfm?id=2939514
 
 Video: https://www.youtube.com/watch?v=DfBEomuxNtw
 
+![image](https://user-images.githubusercontent.com/421604/36107831-4656daa0-0fe9-11e8-9064-eaea46594a99.png)
+
 Requirements:
 1. flask
 2. textblob
